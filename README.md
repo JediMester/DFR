@@ -19,12 +19,15 @@ Example service unit file:
 [Unit]
 
 Description=Dynamic Firewall Rules for TCP/UDP Scans
+
 After=network.target
 
 [Service]
 
 ExecStart=/usr/bin/python3 /path/to/dynamic_firewalld_rules.py
+
 Restart=always
+
 User=root
 
 [Install]
