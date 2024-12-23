@@ -12,6 +12,7 @@ Firewalld installed.
 1. Clone the code to a directory of your liking.
 2. Create a systemd service so it can run and protect your system constanly:
 sudo nano /etc/system/systemd/dynamic_firewalld_rules.service
+
 Example service unit file:
 
 [Unit]
