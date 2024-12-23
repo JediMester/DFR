@@ -13,15 +13,19 @@ Firewalld installed.
 2. Create a systemd service so it can run and protect your system constanly:
 sudo nano /etc/system/systemd/dynamic_firewalld_rules.service
 Example service unit file:
+
 [Unit]
 Description=Dynamic Firewall Rules for TCP/UDP Scans
 After=network.target
+
 [Service]
 ExecStart=/usr/bin/python3 /path/to/dynamic_firewalld_rules.py
 Restart=always
 User=root
+
 [Install]
 WantedBy=multi-user.target
+
 3. Enable the service:
 sudo systemctl enable dynamic_firewalld_rules.service
 4. Start the service:
