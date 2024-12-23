@@ -4,7 +4,9 @@ Dynamic FirewallD Rules
 The purpose of this python script is to block incoming TCP/UDP scans from tools like nmap, rustscan, etc. It creates dynamic firewalld & iptables rules to block and deny IP addresses that try to search for vulnerabilities/open ports on your system.
 
 **Requirements:**
+
 Python 3.10+ installed.
+
 Firewalld installed.
 
 **INSTALLATION**
