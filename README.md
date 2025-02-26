@@ -26,7 +26,7 @@ After=network.target
 
 [Service]
 
-ExecStart=/usr/bin/python3 /path/to/dynamic_firewalld_rules.py
+ExecStart=/usr/bin/python3 /path/to/tcp_udp_scan_blocker.py
 
 Restart=always
 
